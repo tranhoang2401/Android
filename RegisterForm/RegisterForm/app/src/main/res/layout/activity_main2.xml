@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:text="First name"/>
+
+            <EditText
+                android:id="@+id/edt_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#D5D5D5"
+                android:hint="First name"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:text="Last name"/>
+
+            <EditText
+                android:id="@+id/edt_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#D5D5D5"
+                android:hint="Last name"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:textSize="20dp"
+            android:text="Gender"
+            android:textColor="@color/black" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radiomale"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Male"
+                android:textColor="@color/black"/>
+
+            <RadioButton
+                android:id="@+id/radiofemale"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:text="Female"
+                android:textColor="@color/black"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Birthday"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tv_birthday"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="6.5"
+            android:hint="Birthday"
+            android:background="#D5D5D5"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/bt_select"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:text="Select"
+            android:textSize="19dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#D5D5D5"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Address"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#D5D5D5"
+        android:hint="Address"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#D5D5D5"
+        android:hint="Email"/>
+    <CheckBox
+        android:id="@+id/checkboxagree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="I agree to terms of use"/>
+
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Register"
+        android:backgroundTint="#D5D5D5"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+
+</LinearLayout>
