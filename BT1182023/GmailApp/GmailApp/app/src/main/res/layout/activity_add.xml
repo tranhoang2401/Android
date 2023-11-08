@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/tvDestroy"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Hủy"
+            android:gravity="center_vertical"
+            android:textSize="20dp"
+            android:paddingRight="20dp"/>
+
+        <TextView
+            android:id="@+id/tvSave"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:text="Xong"
+            android:textColor="#0328FB"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập tên"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D5D5D5"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="10dp"
+        android:minHeight="48dp"
+        android:hint="Tên"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập nội dung"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/edtInfomation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D5D5D5"
+        android:minHeight="48dp"
+        android:paddingLeft="10dp"
+        android:hint="Nội dung"/>
+
+
+</LinearLayout>

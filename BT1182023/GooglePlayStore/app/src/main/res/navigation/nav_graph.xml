@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/navigation_game">
+
+    <fragment
+        android:id="@+id/navigation_game"
+        android:name="com.example.googleplaystore.fragment.GameFragment"
+        tools:layout="@layout/fragment_game"
+        android:label="Game"/>
+
+    <fragment
+        android:id="@+id/navigation_app"
+        android:name="com.example.googleplaystore.fragment.AppFragment"
+        tools:layout="@layout/fragment_app"
+        android:label="App"/>
+
+    <fragment
+        android:id="@+id/navigation_book"
+        android:name="com.example.googleplaystore.fragment.BookFragment"
+        tools:layout="@layout/fragment_book"
+        android:label="Book"/>
+</navigation>
